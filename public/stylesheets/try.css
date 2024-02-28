@@ -1,15 +1,3 @@
-.Team{
-    width: 100%;
-    height: 100vh;
-    /* border: 2px solid green; */
-    position:absolute;
-    top: 400vh;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-     */
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
         *{
             padding: 0;
@@ -87,5 +75,3 @@
         .caption .social-links i:hover{
             color: #0c52a1;
         }
-
-
