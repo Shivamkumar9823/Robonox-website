@@ -20,6 +20,9 @@
     <link rel='stylesheet' href='/stylesheets/typing_effect.css' />
     <link rel='stylesheet' href='/stylesheets/typing_effect.css' />
     <link rel='stylesheet' href='/stylesheets/slide-container.css' />
+    <link rel='stylesheet' href='/stylesheets/feedback.css' />
+    <link rel='stylesheet' href='/stylesheets/footer.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <!-- css in navbar.css  -->
@@ -121,6 +124,25 @@
                </li>
 
                <li><a href="#" class="nav__link">Contact</a></li>
+
+               <li  class="dropdown__item"> 
+                  <div class="nav__link">
+                     <i class='fas fa-user-alt' style='font-size:24px;border: 2px solid white;padding:10px;border-radius: 50%;'></i>
+                  </div>
+                  <ul class="dropdown__menu">
+                     <li>
+                        <a href="#" class="dropdown__link">
+                           <i class="ri-pie-chart-line"></i> SignUp
+                        </a>                          
+                     </li>
+
+                     <li>
+                        <a href="#" class="dropdown__link">
+                           <i class="ri-arrow-up-down-line"></i>SignIn
+                        </a>
+                     </li>
+
+              </li>
             </ul>
          </div>
       </nav>
@@ -164,11 +186,32 @@
        <!-- css in service.css -->
   <div class="services">
          <div class="div_title">
-            <h1>Learning Programs</h1>
+            <!-- <h1>Learning Programs</h1> -->
+            <div class="waviy">
+               <span style="--i:1">L</span>
+               <span style="--i:2">E</span>
+               <span style="--i:3">A</span>
+               <span style="--i:4">R</span>
+               <span style="--i:5">N</span>
+               <span style="--i:6">I</span>
+               <span style="--i:7">N</span>
+               <span style="--i:8">G</span>
+               <!-- <span style="--i:9">  </span> -->
+               &nbsp;&nbsp;&nbsp;&nbsp;
+               <span style="--i:10">P</span>
+               <span style="--i:11">R</span>
+               <span style="--i:12">O</span>
+               <span style="--i:13">G</span>
+               <span style="--i:14">R</span>
+               <span style="--i:15">A</span>
+               <span style="--i:16">M</span>
+               <span style="--i:17">S</span>
+               <span style="--i:18">.</span>
+            </div>
         </div>
        
 <!-- cards starts -->
-        <div class="cards">
+     <div class="cards">
            <div class="childs">
             <div class="card 1">
              <div class="card_image">
@@ -218,27 +261,54 @@
            </div>
      </div>
         <!-- card ends -->
-     <div class="feedback">
-        <div class="container">
-           all the feedbacks
-        </div>
+
+         <!-- all css in services.css -->
+     <div class="feedback">    
+         <div class="container" id="1">
+            
+            <i class="fa-solid fa-graduation-cap"></i>
+            <p class="bold">1M +</p>
+            <p class="b">students</p>
+         </div>
+         <div class="container" id="2">
+           <i class="fa-solid fa-desktop"></i>
+           <p class="bold">500k +</p>
+           <p class="b">live classes</p>
+         </div>
+         <div class="container" id="3">
+           <i class="fa-solid fa-earth-americas"></i>
+           <p class="bold">30+</p>
+           <p class="b">countries</p>
+         </div>
+         <div class="container" id="4">
+
+           <i class="fa-solid fa-star"></i>
+           <p class="bold">4.8/5</p>
+           <p class="b" id="left">rating</p>
+         </div>   
      </div>
+
+
+
      <div class="why">
             <div class="container1">
-              <h1>Why Choose ROBONOX ?</h1>
+              <h1>Why Choose <span>ROBONOX</span></h1>
             </div>
             <div class="container2">
               <div class="box">
-                 <img src="" alt="">
-                 <h1>Top 1% Global Educators</h1>
+                 <img src="/images/badge.png" alt="" class="img-1">
+                 <h2>Top 1% Global Educators</h1>
+                 <p>At Robonox, top Indian educators impart expertise across diverse technical fields like engineering and robotics, ensuring quality education through engaging lectures and practical demonstrations for students to excel competitively.</p>
               </div>
               <div class="box">
-                 <img src="" alt="">
-                 <h1>Futuristic Curriculum</h1>
+                 <img src="/images/book-stack.png" alt="" class="img-1" >
+                 <h2>Futuristic Curriculum</h1>
+                  <p>Robonox offers a futuristic curriculum integrating AI, VR, and quantum computing, ensuring students are prepared for tomorrow's industries with hands-on learning and innovation.</p>
               </div>
               <div class="box">
-                 <img src="" alt="">
-                 <h1>Access to the Global Arena</h1>
+                 <img src="/images/global-network.png" alt="" class="img-1">
+                 <h2>Access to the Global Arena</h2>
+                 <p>Robonox prioritizes global access, fostering diverse collaborations and cultural exchanges to prepare students for success in an interconnected world.</p>
               </div>
             </div>
      </div>
@@ -336,11 +406,15 @@
           </div>
       </div>
   </div>
-  
-  
-  
 
 
+   </div>
+
+
+
+   <!-- css in footer.css -->
+   <div class="footer">
+      
 
    </div>
 
