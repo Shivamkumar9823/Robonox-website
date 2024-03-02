@@ -24,7 +24,8 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            background-color: #0c52a1;
+            /* background-color: #0c52a1; */
+            background-color: #444345;
         }
         .profile-card{
             position: relative;

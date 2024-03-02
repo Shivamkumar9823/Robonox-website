@@ -30,7 +30,12 @@
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1024px) {
   :root {
-    --normal-font-size: 1rem;
+    --normal-font-size: 1.1rem;
+  }
+}
+@media screen and (max-width:1024px) {
+  :root {
+    --normal-font-size: 3rem;
   }
 }
 
@@ -76,8 +81,22 @@ a {
 
 /*=============== NAV ===============*/
 .nav {
-  height: var(--header-height);
+  /* height: var(--header-height); */
+  /* height: 3.5rem; */
 }
+
+@media screen and (max-width: 768px) {
+  .nav{
+    height: 12vh; /* Adjust height for smaller screens */
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav{
+    height: 5.5rem; /* Adjust height for smaller screens */
+    /* font-size: 3rem; */
+  }
+}
+
 
 .nav__logo, 
 .nav__burger, 
