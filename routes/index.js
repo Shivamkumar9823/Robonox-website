@@ -8,8 +8,15 @@ const localStrategy = require('passport-local');
 passport.use(new localStrategy(userModel.authenticate()));
 
 /* GET home page. */
-router.get('/', function(req, res, next){
-   res.render('index', { title: 'Robonox' })
+router.get('/', async function(req, res, next){
+   if (!isloggedIn) {
+        const userr = await userModel.findOne({ username: req.session.passport.user});
+        res.render('index',{ userr , title :'Robonox'});
+  } 
+  else {
+   res.render('index', {title:'Robonox', nav:true});
+  }
+
 });
 
 
@@ -29,7 +36,7 @@ router.get('/signup',function(req, res){
 router.get('/profile', isloggedIn, async function(req, res, next){
   const user = await userModel
   .findOne({ username: req.session.passport.user});
-  res.render('profile' , { user});
+  res.render('profile' , {user, title:'Robonox', nav:true});
 });
 
 

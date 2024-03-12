@@ -1,58 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/public/stylesheets/try.css">
-</head>
-<body>
- 
-  <div class="home-container">
-    <div class="profile-card">
-        <div class="img">
-            <img src="./man.jpg">
-        </div>
-        <div class="caption">
-            <h3>Tom Cruise</h3>
-            <p>Full Stack Developer</p>
-            <div class="social-links">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-            </div>
-        </div>
+<header class="header">  
+    <nav class="nav container">
+    <div class="nav__data">
+       <a href="#" class="nav__logo">
+          <img class="logo_img" src="/images/logo.png" alt="">
+       </a>
+       
+       <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line nav__burger"></i>
+          <i class="ri-close-line nav__close"></i>
+       </div>
     </div>
-    <div class="profile-card">
-        <div class="img">
-            <img src="./man.jpg">
-        </div>
-        <div class="caption">
-            <h3>David Wornar</h3>
-            <p>Front End Developer</p>
-            <div class="social-links">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-            </div>
-        </div>
-    </div>
-    <div class="profile-card">
-        <div class="img">
-            <img src="./man.jpg">
-        </div>
-        <div class="caption">
-            <h3>Vin Diesel</h3>
-            <p>Back End Developer</p>
-            <div class="social-links">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-            </div>
-        </div>
-    </div>
-</div>
 
+    <!--=============== NAV MENU ===============-->
+    <div class="nav__menu" id="nav-menu">
+       <ul class="nav__list">
+          <li><a href="#" class="nav__link">Home</a></li>
 
-</body>
-</html>
+          <li><a href="#" class="nav__link">About</a></li>
+
+          <!--=============== DROPDOWN 1 ===============-->
+          <li class="dropdown__item">
+             <div class="nav__link">
+                Services <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+             </div>
+
+             <ul class="dropdown__menu">
+                <li>
+                   <a href="#" class="dropdown__link">
+                      <i class="ri-pie-chart-line"></i> Training
+                   </a>                          
+                </li>
+
+                <li>
+                   <a href="#" class="dropdown__link">
+                      <i class="ri-arrow-up-down-line"></i> Manufacturing
+                   </a>
+                </li>
+             </ul>
+          </li>
+          
+          <li><a href="#" class="nav__link">Products</a></li>
+
+          <!--=============== DROPDOWN 2 ===============-->
+          <li class="dropdown__item">
+             <div class="nav__link">
+                Users <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+             </div>
+
+             <ul class="dropdown__menu">
+                <li>
+                   <a href="/profile" class="dropdown__link">
+                      <i class="ri-user-line"></i> Profiles
+                   </a>                          
+                </li>
+
+                <li>
+                   <a href="#" class="dropdown__link">
+                      <i class="ri-lock-line"></i> Accounts
+                   </a>
+                </li>
+
+                <li>
+                   <a href="#" class="dropdown__link">
+                      <i class="ri-message-3-line"></i> Messages
+                   </a>
+                </li>
+             </ul>
+          </li>
+
+          <li  class="dropdown__item"> 
+             <div class="nav__link">
+                <i class='fas fa-user-alt' style='font-size:24px;border: 2px solid white;padding:10px;border-radius: 50%;'></i>
+             </div>
+             <ul class="dropdown__menu">
+                <li>
+                   <a href="/login" class="dropdown__link">
+                      <i class="ri-pie-chart-line"></i> LogIn
+                   </a>                          
+                </li>
+
+                <li>
+                   <a href="/signup" class="dropdown__link">
+                      <i class="ri-arrow-up-down-line"></i>SignUp
+                   </a>
+                </li>
+
+         </li>
+       </ul>
+    </div>
+     </nav>
+   </header>

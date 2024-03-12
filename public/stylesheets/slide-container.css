@@ -3,20 +3,30 @@
     height: 100vh;
     /* border: 2px solid green; */
     position:absolute;
-    top: 400vh;
+    top: 330vh;
     /* display: flex;
     justify-content: center;
-    align-items: center;
-     */
+    flex-direction: column;
+    align-items: center; */
+    
+}
+@media(orientation:portrait){
+    .Team{
+        top: 237vh;
+    }
 }
 
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-        *{
+      
+*{
             padding: 0;
             margin: 0;
             box-sizing: border-box;
             font-family: Poppins;
         }
+
         .home-container{
             width: 100%;
             height: 100vh;
@@ -26,6 +36,7 @@
             justify-content: center;
             /* background-color: #0c52a1; */
             background-color: #444345;
+            margin-top: 300px;
         }
         .profile-card{
             position: relative;
