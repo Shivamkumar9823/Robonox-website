@@ -1,29 +1,54 @@
 
-    <!-- css in navbar.css  -->
+    <!-- css in header.css  -->
 
    <% include ./partial/header.ejs %>    
 
     <!-- css in main_img.css  -->
    <div class="main_img">
-      <img src="/images/background_sky_blue.jpg" alt="" class="bg_img">
-       <div class="container">
-         <div class="content">
-           <h2>ROBONOX</h2>
-           <h2>ROBONOX</h2>
-         </div>
-         <div class="hub">
+       <div class="contain">
+          <div class="b1"><img src="/images/10258678_4384867.svg" alt=""></div>
+          <div class="hub">
                THE
-                  TECH<H1>TRAINING</H1> & <H1>MANUFACTURING</H1>HUB
+                  TECH<H1><div class="waviy">
+                    <span style="--i:1">T</span>
+                    <span style="--i:2">R</span>
+                    <span style="--i:3">A</span>
+                    <span style="--i:4">I</span>
+                    <span style="--i:5">N</span>
+                    <span style="--i:6">I</span>
+                    <span style="--i:7">N</span>
+                    <span style="--i:8">G</span>
+                   
+                 </div></H1> & <H1><div class="waviy">
+                  <span style="--i:1">M</span>
+                  <span style="--i:2">A</span>
+                  <span style="--i:3">N</span>
+                  <span style="--i:4">U</span>
+                  <span style="--i:5">F</span>
+                  <span style="--i:6">A</span>
+                  <span style="--i:7">C</span>
+                  <span style="--i:8">T</span>
+                  <span style="--i:9">U</span>
+                  <span style="--i:10">R</span>
+                  <span style="--i:11">I</span>
+                  <span style="--i:12">N</span>
+                  <span style="--i:13">G</span>
+                 
+               </div></H1>HUB
           </div>
        </div>
    </div>
-
-
-
+ 
+    <img src="/images/hexagon.webp" alt="" class="hexagon">   
+    <img src="/images/github.webp" alt="" class="github">   
+    <img src="/images/jqery.webp" alt="" class="jquery">   
+    <img src="/images/java.png" alt="" class="java"> 
+    <i class="fa-brands fa-html5"></i>  
+    <i class="fa-brands fa-python"></i>
      <!-- css in service.css -->
   <div class="services">
 
-         <div class="div_title">
+         <div class="div_title" id="about">
             <div class="waviy">
                <span style="--i:1">A</span>
                <span style="--i:2">B</span>
@@ -41,7 +66,7 @@
                <span style="--i:13">X</span>
               
             </div>
-            <div class="about_robonox">
+            <div class="about_robonox" >
                <p>ROBONOX is at the forefront of technological innovation, leveraging the power of robotics and automation to drive advancements in various industries. The company is committed to 
                   pushing the boundaries of what is possible in the fields of robotics, automation, and artificial intelligence, with a mission to create solutions that redefine industry standards.
                   In addition to its focus on technological solutions, ROBONOX is dedicated to fostering a culture of learning and education. The company actively engages with educational institutions and students, promoting knowledge exchange and creating opportunities for skill development in emerging technologies.</p>
@@ -49,7 +74,7 @@
          </div>
 
          <!-- services div education and MANUFACTURING -->
-         <div class="service">
+         <div class="service" id="service">
             <div class="waviy">
                <span style="--i:1">S</span>
                <span style="--i:2">E</span>
@@ -61,18 +86,29 @@
                <span style="--i:8">S</span>
               
             </div>
-
           <div class="service_container" id="ser_container">
             <div class="serv" id="serv1">
+               <div class="serv_content-f">
+                  <h1 class="card-title-f">TRAINING</h1>
+                  <p class="card-sub-title-f">All the courses available</p>
+               </div>
                <div class="serv_content">
-                  <h1>TRAINING</h1>
-                  <p></p>
+                  <h1 class="card-title">TRAINING</h1>
+                  <p class="card-sub-title">All the courses available</p>
+                  <p class="card-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic corrupti cumque blanditiis vero cupiditate officiis fugit ex. Asperiores rem magnam, eveniet aperiam repudiandae quas at.</p>
+                  <button class="card-btn">Explore Courses</button>
                </div>
             </div>
             <div class="serv" id="serv2">
+                <div class="serv_content-f">
+                    <h1 class="card-title-f">MANUFACTURING</h1>
+                    <p class="card-sub-title-f">All the courses available</p>
+                 </div>
                <div class="serv_content">
-                  <h1>MANUFACTURING</h1>
-               <!-- <i class="fa-solid fa-book-open-reader"></i> -->
+                <h1 class="card-title">MANUFACTURING</h1>
+                <p class="card-sub-title">All the courses available</p>
+                <p class="card-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic corrupti cumque blanditiis vero cupiditate officiis fugit ex. Asperiores rem magnam, eveniet aperiam repudiandae quas at.</p>
+                <button class="card-btn">Explore Courses</button>
                </div>
             </div>
           </div>
@@ -80,80 +116,37 @@
 
          </div>
        
-<!-- cards starts ,  all css in services.css-->
-     <!-- <div class="cards">
-           <div class="childs">
-            <div class="card 1">
-             <div class="card_image">
-                <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> 
-               </div>
-             <div class="card_title title-white">
-               <p>Card Title</p>
-             </div>
-           </div>
-           
-             <div class="card 2">
-             <div class="card_image">
-               <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> 
-               </div>
-             <div class="card_title title-white">
-               <p>Card Title</p>
-             </div>
-           </div>
-           
-           <div class="card 3">
-             <div class="card_image">
-               <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> 
-             </div>
-             <div class="card_title title-white">
-               <p>Card Title</p>
-             </div>
-           </div>
-             
-             <div class="card 4">
-             <div class="card_image">
-               <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> 
-               </div>
-             <div class="card_title title-white">
-               <p>Card Title</p>
-             </div>
-             </div>
-             <div class="card 5">
-              <div class="card_image">
-                 <img src="https://i.redd.it/b3esnz5ra34y.jpg" /> 
-                </div>
-              <div class="card_title title-white">
-                <p>Card Title</p>
-              </div>
-            </div>
-
-           
-           </div>
-     </div> -->
-  <!-- card ends -->
 
          <!-- all css in services.css -->
      <div class="feedback">    
          <div class="container" id="1">
             <i class="fa-solid fa-graduation-cap"></i>
-            <p class="bold">1M +</p>
+           <div class="para">
+            <p class="bold">1K +</p>
             <p class="b">students</p>
+           </div>
          </div>
          <div class="container" id="2">
            <i class="fa-solid fa-desktop"></i>
-           <p class="bold">500k +</p>
+              <div class="para">
+           <p class="bold">100 +</p>
            <p class="b">live classes</p>
+              </div>
          </div>
          <div class="container" id="3">
-           <i class="fa-solid fa-earth-americas"></i>
-           <p class="bold">30+</p>
-           <p class="b">countries</p>
+            <i class="fa-solid fa-gears"></i>
+           <div class="para">
+           <p class="bold">50+</p>
+           <p class="b">projects</p>
+           </div>
          </div>
          <div class="container" id="4">
 
            <i class="fa-solid fa-star"></i>
-           <p class="bold">4.8/5</p>
+           <div class="para">
+           <p class="bold">4.5/5</p>
            <p class="b" id="left">rating</p>
+            </div>   
          </div>   
      </div>
 
@@ -166,7 +159,7 @@
             <div class="container2">
               <div class="box">
                  <img src="/images/badge.png" alt="" class="img-1">
-                 <h2>Top 1% Global Educators</h1>
+                 <h2>Top 1% Global Educators</h2>
                  <p>At Robonox, top Indian educators impart expertise across diverse technical fields like engineering and robotics, ensuring quality education through engaging lectures and practical demonstrations for students to excel competitively.</p>
               </div>
               <div class="box">
@@ -188,10 +181,202 @@
          <div class="champs_container">
          <h1>watch our champs</h1>
          <span>Learning in action</span>
+         </div>
+    <div class="cont">    
+          <div class="slide-container active">
+            <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+                <div class="user">
+                    <img src="/images/ashvick.jpeg" >
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fars fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text"> Lorem ipsum dolor, sit amet consectetur 
+                     adipisicing elit. Laborum deserunt expedita fuga impedit 
+                      perspiciatis pariatur nobis cum labore ex quisquam? Iusto 
+                       aliquam ab maiores explicabo sapiente ullam dolor eum sequi! 
+                     </p>
+            </div>
           </div>
-          <% include ./feedback.ejs %>    
+          <div class="slide-container">
+            <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+                <div class="user">
+                    <img src="/images/ashvick.jpeg" >
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fars fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text"> Lorem ipsum dolor, sit amet consectetur 
+                     adipisicing elit. Laborum deserunt expedita fuga impedit 
+                      perspiciatis pariatur nobis cum labore ex quisquam? Iusto 
+                       aliquam ab maiores explicabo sapiente ullam dolor eum sequi! 
+                     </p>
+            </div>
+          </div>
+          <div class="slide-container">
+            <div class="slide">
+                <i class="fas fa-quote-right icon"></i>
+                <div class="user">
+                    <img src="/images/ashvick.jpeg" >
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fars fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text"> Lorem ipsum dolor, sit amet consectetur 
+                     adipisicing elit. Laborum deserunt expedita fuga impedit 
+                      perspiciatis pariatur nobis cum labore ex quisquam? Iusto 
+                       aliquam ab maiores explicabo sapiente ullam dolor eum sequi! 
+                     </p>
+            </div>
+          </div>
+             <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+             <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
+        </div>
 
      </div>
+    <!-- css in slide-container.css  -->
+   
+     <div class="Team">
+        <div class="wrapper">
+            <div class="team_heading">
+                <div class="waviy">
+                    <span style="--i:1">C</span>
+                    <span style="--i:2">O</span>
+                    <span style="--i:3">L</span>
+                    <span style="--i:4">L</span>
+                    <span style="--i:5">E</span>
+                    <span style="--i:6">B</span>
+                    <span style="--i:7">R</span>
+                    <span style="--i:8">A</span>
+                    <span style="--i:9">T</span>
+                    <span style="--i:10">O</span>
+                    <span style="--i:11">R</span>
+                    <span style="--i:12">S</span>
+                   
+                 </div>
+     
+        </div> 
+        <div class="home-container">
+        
+        <div class="profile-card">
+            <div class="img">
+                <img src="/images/aanan.jpg">
+            </div>
+            <div class="caption">
+                <h3>Aanan</h3>
+                <p>Full Stack Developer</p>
+                <div class="social-links">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="/images/Pinak.jpg">
+            </div>
+            <div class="caption">
+                <h3>Pinak</h3>
+                <p>Front End Developer</p>
+                <div class="social-links">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="/images/ankit.jpg">
+            </div>
+            <div class="caption">
+                <h3>Ankit</h3>
+                <p>Back End Developer</p>
+                <div class="social-links">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="/images/Tushar.jpg">
+            </div>
+            <div class="caption">
+                <h3>Tushar</h3>
+                <p>Back End Developer</p>
+                <div class="social-links">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="/images/ashvick.jpeg">
+            </div>
+            <div class="caption">
+                <h3>Tushar</h3>
+                <p>Back End Developer</p>
+                <div class="social-links">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+  </div>
+  
+  <!-- css in footer.css -->
+  <div class="footer-container" id="footer">
+    <div class="footer">
+
+         <ul class="social_icon">
+          <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+
+         </ul> 
+         <ul class="menu">
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Service</a></li>
+           <li><a href="#">Team</a></li>
+           <li><a href="#">Contact</a></li>
+
+         </ul>
+         <p> ©2024 Online Tutorials | All Rights Reserved </p>
+    </div>
+ </div>
 
 
 
@@ -200,121 +385,6 @@
 
   </div>
       
-    <!-- css in slide-container.css  -->
-  <div class="Team">  
-    <div class="home-container">
-      <div class="profile-card">
-          <div class="img">
-              <img src="/images/aanan.jpg">
-          </div>
-          <div class="caption">
-              <h3>Aanan</h3>
-              <p>Full Stack Developer</p>
-              <div class="social-links">
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-instagram"></i>
-              </div>
-          </div>
-      </div>
-      <div class="profile-card">
-          <div class="img">
-              <img src="/images/pinak.jpg">
-          </div>
-          <div class="caption">
-              <h3>Pinak</h3>
-              <p>Front End Developer</p>
-              <div class="social-links">
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-instagram"></i>
-              </div>
-          </div>
-      </div>
-      <div class="profile-card">
-          <div class="img">
-              <img src="/images/ankit.jpg">
-          </div>
-          <div class="caption">
-              <h3>Ankit</h3>
-              <p>Back End Developer</p>
-              <div class="social-links">
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-instagram"></i>
-              </div>
-          </div>
-      </div>
-      <div class="profile-card">
-          <div class="img">
-              <img src="/images/Tushar.jpg">
-          </div>
-          <div class="caption">
-              <h3>Tushar</h3>
-              <p>Back End Developer</p>
-              <div class="social-links">
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-instagram"></i>
-              </div>
-          </div>
-      </div>
-      <div class="profile-card">
-          <div class="img">
-              <img src="/images/ashvick.jpeg">
-          </div>
-          <div class="caption">
-              <h3>Tushar</h3>
-              <p>Back End Developer</p>
-              <div class="social-links">
-                  <i class="fa-brands fa-facebook"></i>
-                  <i class="fa-brands fa-twitter"></i>
-                  <i class="fa-brands fa-instagram"></i>
-              </div>
-          </div>
-      </div>
-
-  </div>
-</div>
-
-
-
-   <!-- css in footer.css -->
-   <div class="footer-container">
-      <div class="footer">
-         <div class="waves">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
-         </div>
-           <ul class="social_icon">
-            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-
-           </ul> 
-           <ul class="menu">
-             <li><a href="#">Home</a></li>
-             <li><a href="#">About</a></li>
-             <li><a href="#">Service</a></li>
-             <li><a href="#">Team</a></li>
-             <li><a href="#">Contact</a></li>
-
-           </ul>
-           <p> ©2024 Online Tutorials | All Rights Reserved </p>
-      </div>
-   </div>
-
-
-  
-
-    <script src="/javascripts/script.js"></script>
-    <script src="/javascripts/robo.js"></script>
+  <% include ./partial/footer.ejs %>    
  
-    <!-- for icons from ionicons.com -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  </body>
-</html>
+

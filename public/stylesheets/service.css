@@ -7,29 +7,34 @@
 .services{
     width: 100%;
     height: auto;
-    /* background-color: black; */
-    /* background: linear-gradient(rgb(22, 22, 22), #000); */  
     z-index: 1;
     background:white;
-    background-image: url(images/pattern-randomized.png);
-    background-repeat: repeat-y;
-    /* color: aqua; */
+    
     position:absolute;
     top: 85vh;  
-    /* border-left: 2px solid aqua ; */
-    /* border-right: 2px solid aqua; */
-    /* border-bottom-left-radius:5%; */
-    padding-bottom: 6rem;    
+    /* padding-bottom: 6rem;     */
     /* box-shadow: 0 0 10px 5px ; */
 
 }
+
+
+/* Landscape orientation */
+@media (orientation:landscape) {
+  .services {
+    border-top-left-radius:50px;
+       /* This will make the border radius 5% of the element's width and height */
+  }
+}
+
+
+
 /* Portrait orientation */
 @media (orientation: portrait) {
   .services {
     border-top-left-radius:250px;
     border-bottom-right-radius:250px;
     position:absolute;
-    top:50vh;
+    top:40vh;
     height: 202vh;
 
       /* This will make the border radius 10% of the element's width and height */
@@ -37,13 +42,6 @@
 }
 
 /* Landscape orientation */
-@media (orientation: landscape) {
-  .services {
-    border-top-left-radius:5%;
-    border-bottom-right-radius:5%;
-       /* This will make the border radius 5% of the element's width and height */
-  }
-}
 
 .service{
   width: 100%;
@@ -54,6 +52,7 @@
   align-items: center;
   flex-direction: column;
   margin-top:40px;
+
 }
 
 
@@ -113,13 +112,24 @@
   width: 40%;
   height: 45vh;
   max-height:400px;
+  overflow: hidden;
   /* border: 2px solid crimson; */
   border-radius:1rem;
   position: relative;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* border: 2px solid transparent;
   transition: border-color 0.3s; */
 }
+.serv h1{
+  font-size: 3rem;
+
+}
+
+
+
 @media (orientation:portrait) {
   .serv{
     width: 80%;
@@ -133,16 +143,77 @@
   width: 100%;
   height: 100%;
   color: white;
-  display: flex;
-  /* justify-content:center; */
-  align-items: center;
-  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  /* background: #1f3d47; */
   font-size: 1rem;
   position: relative;
+  backdrop-filter: blur(5px);
+  /* border-radius: ; */
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 2s;
 
+}
+.serv_content-f{
+  width: 100%;
+  height: 100%;
+  color: white;
+ display: flex;
+ padding-top: 40px;
+ flex-direction: column;
+ /* justify-content: center; */
+ align-items: center;
+}
+.card-sub-title-f{
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 
+
+.serv:hover .serv_content{
+  right: 0;
+}
+.serv:hover .serv_content-f{
+  /* visibility: hidden; */
+  display: none ;
+}
+
+
+.card-title{
+   text-transform: uppercase;
+   font-size: 50px;
+   font-weight: 500;
+}
+
+.card-sub-title{
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.card-info{
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px 0;
+  font-weight: 400;
+}
+.card-btn{
+  color: #1f3d47;
+  background: #8fabba;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+}
 
 
 
@@ -192,7 +263,7 @@
 }
 @media(orientation:portrait){
   .about_robonox{
-    font-size: 3rem;
+    /* font-size: 3rem; */
   }
 }
 
@@ -213,6 +284,7 @@
   animation-delay: calc(.2s * var(--i));
   text-shadow: 1px 1px 2px pink;
 }
+
 @keyframes flip {
   0%,80% {
     transform: rotateY(360deg) 
@@ -344,15 +416,23 @@
     font-size: 18px;
     /* display: flex; 
     justify-content:center ;
-    align-items:center ;*/
+    align-items:center ; */
   } 
-  #left{
+  /* #left{
     display: flex; 
     justify-content:center ;
     align-items:center  
 
 
-  }
+  } */
+.para{
+    display: flex; 
+    flex-direction: column;
+    justify-content:center ;
+    align-items:center  
+    
+}
+
   /* .feedback .container{ 
     height: 42vh;
     display: flex;
@@ -360,6 +440,11 @@
     align-items: center;
   
   }*/
+
+  .fa-solid{
+    font-size: 70px;
+    color: #0C52A1;
+  }
   .fa-graduation-cap{
     font-size: 70px;
     color: #0C52A1;
@@ -397,8 +482,11 @@
  .why .container1{
        width: 100%;
        color: black;
+      font-size: 3rem;
+       padding-bottom:20px ;
       /* border: 2px solid orange; */
        padding-left: 100px;
+       
  }
  .why .container1 span{
   color: #FF752C;
@@ -430,16 +518,17 @@
 .container2 .box{
   width: 400px;
   height: 400px;
-  border: 2px solid black;
   padding: 2rem;
-}
+  margin-top: 3rem;
+  border-radius:15px;
+
+  }
 
 @media (orientation:portrait ) {
   .container2 .box{
     width:92%;
     height:auto;
     padding: 20px;
-    border: 2px solid black;
     margin: 2rem ;
     box-sizing:border-box;
   }
@@ -451,20 +540,30 @@
  
 
  .container2 .box h2{
-  color: #171C26;
+  color: #404143;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+  padding-top: 10px;
  }
 
  .champs{
-  width: 100%;
-  height: auto;
+  
+
   /* border: 2px solid red; */
   margin-top: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
  }
  .champs_container{
-  margin-left: 2vw;
+  margin-left: 1vw;
+  margin-top: -5vh;
+
+ }
+ .champs_container h1{
+  /* margin-left: 2vw; */
+  font-size: 4rem;
 
  }
  .champs span{

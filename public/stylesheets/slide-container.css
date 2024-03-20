@@ -1,9 +1,9 @@
 .Team{
     width: 100%;
-    height: 100vh;
+    height: auto;
     /* border: 2px solid green; */
-    position:absolute;
-    top: 330vh;
+    /* position:absolute; */
+    /* top: 260vh; */
     /* display: flex;
     justify-content: center;
     flex-direction: column;
@@ -12,7 +12,7 @@
 }
 @media(orientation:portrait){
     .Team{
-        top: 237vh;
+        /* top: 150vh; */
     }
 }
 
@@ -26,17 +26,35 @@
             box-sizing: border-box;
             font-family: Poppins;
         }
+.wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #4E3BC2;
+}
+.team_heading h1{
+    font-size: 5rem;
+    margin-left: 10px;
+}
+
 
         .home-container{
             width: 100%;
-            height: 100vh;
+            height: auto;
+            min-height: 100vh;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
             /* background-color: #0c52a1; */
-            background-color: #444345;
-            margin-top: 300px;
+            background-color:#4E3BC2;
+            /* margin-top: 50px; */
+            padding-top: 10vh;
+            padding-bottom: 30vh;
+
         }
         .profile-card{
             position: relative;

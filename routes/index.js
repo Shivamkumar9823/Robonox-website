@@ -9,14 +9,8 @@ passport.use(new localStrategy(userModel.authenticate()));
 
 /* GET home page. */
 router.get('/', async function(req, res, next){
-   if (!isloggedIn) {
-        const userr = await userModel.findOne({ username: req.session.passport.user});
-        res.render('index',{ userr , title :'Robonox'});
-  } 
-  else {
-   res.render('index', {title:'Robonox', nav:true});
-  }
-
+    res.render('index', {title:'Robonox', nav:true})
+   
 });
 
 
