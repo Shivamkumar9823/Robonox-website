@@ -33,11 +33,11 @@ body::-webkit-scrollbar{
 }
 
 
-.hexagon{
-  width: 00px;
+.msme{
+  width: 10px;
   position: absolute;
-  top: 60vh;
-  left: 50vw;
+  top: 50vh;
+  left: 90vw;
   opacity:0.43;
 }
 .github{
