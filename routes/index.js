@@ -22,6 +22,9 @@ router.get('/login',function(req, res){
 router.get('/signup',function(req, res){
      res.render('signup');
 })
+router.get('/training',function(req, res){
+     res.render('edu', { nav:true })
+});
 
 // router.get('/profile',isloggedIn,function(req, res){
 //      res.render('profile');

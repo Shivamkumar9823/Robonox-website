@@ -213,7 +213,10 @@
   outline: none;
   font-weight: 500;
   cursor: pointer;
+  /* display: flex; */
+  /* align-items: center; */
 }
+
 
 
 
