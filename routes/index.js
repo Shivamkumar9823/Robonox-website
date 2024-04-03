@@ -23,7 +23,7 @@ router.get('/signup',function(req, res){
      res.render('signup');
 })
 router.get('/training',function(req, res){
-     res.render('edu', { nav:true })
+     res.render('edu', {title:'Robonox', nav:true })
 });
 
 // router.get('/profile',isloggedIn,function(req, res){

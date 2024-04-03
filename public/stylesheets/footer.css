@@ -101,3 +101,31 @@
     animation: animateWave_02 3s linear infinite;
 }
 
+.contact-content{
+    /* display: flex; */
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.contact-content li{
+    /* text-decoration: none; */
+    list-style: none;
+    color: white;
+    margin-bottom: 18px;
+
+}
+.fle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-content li a{
+    text-decoration:none;
+    display: block;
+    color: var(--text-color);
+    font-weight:500 ;
+    font-size: 15px;
+    transition: all .40s ease;
+    list-style: none;
+
+}

@@ -205,6 +205,7 @@ body::-webkit-scrollbar{
 }
 .b1{
  margin-top: 6vh;
+ margin-left: 6vw;
   width:50%;
 }
 
