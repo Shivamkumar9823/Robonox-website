@@ -54,6 +54,8 @@
             /* margin-top: 50px; */
             padding-top: 10vh;
             padding-bottom: 30vh;
+            opacity: 0;
+            transform: translateY(100px);
 
         }
         .profile-card{

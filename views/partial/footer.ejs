@@ -50,6 +50,232 @@ $(document).ready(function(){
         index = (index - 1)% slides.length;
         slides[index].classList.add('active');
     }
+
+
+    console.log("js is connected!");
+    document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll('.b1 img');
+    let index = 0;
+  
+    // Set 'active' class to the first image
+    images[index].classList.add('active');
+
+    setInterval(() => {
+        // Remove 'active' class from all images
+        images.forEach(img => img.classList.remove('active'));
+        // Increment index or reset to 0 if at the last image
+        index = (index + 1) % images.length;
+        // Set 'active' class to the next image
+        images[index].classList.add('active');
+    }, 5000); // Change image every 3 seconds (adjust as needed)
+});
+
+  //=====================for smooth menu scroll=======================================//
+  document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('.smooth-menu');
+
+    links.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+
+            // Add 'active' class to target section
+            targetSection.classList.add('active');
+
+            // Remove 'active' class from other sections
+            const otherSections = document.querySelectorAll('.section');
+            otherSections.forEach(section => {
+                if (section !== targetSection) {
+                    section.classList.remove('active');
+                }
+            });
+
+            // Scroll to target section
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+});
+
+//==== for navbar animation==========//
+document.addEventListener("DOMContentLoaded", function() {
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.add('loaded');
+});
+
+
+
+//animation of service div
+document.addEventListener("DOMContentLoaded", function() {
+    const serviceContainer = document.querySelector('.service');
+
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        const visibleHeight = Math.min(rect.bottom, windowHeight) - Math.max(rect.top, 0);
+        const visiblePercentage = (visibleHeight / element.offsetHeight) * 100;
+        return visiblePercentage >= 40; // Check if at least 40% of the div is visible
+    }
+
+    function fadeInServiceContainer() {
+        if (isInViewport(serviceContainer)) {
+            serviceContainer.classList.add('fadeIn');
+        }
+    }
+
+    window.addEventListener('scroll', function() {
+        fadeInServiceContainer();
+    });
+
+    // Call once on page load to check if the service container is already in view
+    fadeInServiceContainer();
+});
+
+
+//========animation for about section==============//
+document.addEventListener("DOMContentLoaded", function() {
+    const serviceContainer = document.querySelector('.div_title');
+
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        const visibleHeight = Math.min(rect.bottom, windowHeight) - Math.max(rect.top, 0);
+        const visiblePercentage = (visibleHeight / element.offsetHeight) * 100;
+        return visiblePercentage >= 40; // Check if at least 40% of the div is visible
+    }
+
+    function fadeInServiceContainer() {
+        if (isInViewport(serviceContainer)) {
+            serviceContainer.classList.add('fadeIn');
+        }
+    }
+
+    window.addEventListener('scroll', function() {
+        fadeInServiceContainer();
+    });
+
+    // Call once on page load to check if the service container is already in view
+    fadeInServiceContainer();
+});
+
+
+// ================================feedback animation=============//
+document.addEventListener("DOMContentLoaded", function() {
+    const serviceContainer = document.querySelector('.feedback');
+
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        const visibleHeight = Math.min(rect.bottom, windowHeight) - Math.max(rect.top, 0);
+        const visiblePercentage = (visibleHeight / element.offsetHeight) * 100;
+        return visiblePercentage >= 40; // Check if at least 40% of the div is visible
+    }
+
+    function fadeInServiceContainer() {
+        if (isInViewport(serviceContainer)) {
+            serviceContainer.classList.add('fadeIn');
+        }
+    }
+
+    window.addEventListener('scroll', function() {
+        fadeInServiceContainer();
+    });
+
+    // Call once on page load to check if the service container is already in view
+    fadeInServiceContainer();
+});
+
+//==============animation on why div=============//
+document.addEventListener("DOMContentLoaded", function() {
+    const serviceContainer = document.querySelector('.why');
+
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        const visibleHeight = Math.min(rect.bottom, windowHeight) - Math.max(rect.top, 0);
+        const visiblePercentage = (visibleHeight / element.offsetHeight) * 100;
+        return visiblePercentage >= 40; // Check if at least 40% of the div is visible
+    }
+
+    function fadeInServiceContainer() {
+        if (isInViewport(serviceContainer)) {
+            serviceContainer.classList.add('fadeIn');
+        }
+    }
+
+    window.addEventListener('scroll', function() {
+        fadeInServiceContainer();
+    });
+
+    // Call once on page load to check if the service container is already in view
+    fadeInServiceContainer();
+});
+
+
+//================ ANIMATION FOR THE CHAMPS DIV====================
+document.addEventListener("DOMContentLoaded", function() {
+    const serviceContainer = document.querySelector('.champs');
+
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        const visibleHeight = Math.min(rect.bottom, windowHeight) - Math.max(rect.top, 0);
+        const visiblePercentage = (visibleHeight / element.offsetHeight) * 100;
+        return visiblePercentage >= 40; // Check if at least 40% of the div is visible
+    }
+
+    function fadeInServiceContainer() {
+        if (isInViewport(serviceContainer)) {
+            serviceContainer.classList.add('fadeIn');
+        }
+    }
+
+    window.addEventListener('scroll', function() {
+        fadeInServiceContainer();
+    });
+
+    // Call once on page load to check if the service container is already in view
+    fadeInServiceContainer();
+});
+
+
+//===animation on collebrators div==================//
+document.addEventListener("DOMContentLoaded", function() {
+    const serviceContainer = document.querySelector('.home-container');
+
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        const visibleHeight = Math.min(rect.bottom, windowHeight) - Math.max(rect.top, 0);
+        const visiblePercentage = (visibleHeight / element.offsetHeight) * 100;
+        return visiblePercentage >= 40; // Check if at least 40% of the div is visible
+    }
+
+    function fadeInServiceContainer() {
+        if (isInViewport(serviceContainer)) {
+            serviceContainer.classList.add('fadeIn');
+        }
+    }
+
+    window.addEventListener('scroll', function() {
+        fadeInServiceContainer();
+    });
+
+    // Call once on page load to check if the service container is already in view
+    fadeInServiceContainer();
+});
+
+
+
+// animation on champs
+
+
+
   </script>
+
+
+
+
 </body>
 </html>

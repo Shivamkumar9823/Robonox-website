@@ -61,7 +61,7 @@ router.post('/register',function(req, res){
                     res.redirect('/')
                   })
               })
-})
+}) 
 
 
 router.get("/logout", function(req,res,next){

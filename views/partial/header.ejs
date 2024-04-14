@@ -45,9 +45,9 @@
          
              <div class="nav-links" id="nav-links">
                <a class="active" href="/">Home</a>
-               <a href="#about">About</a>
-               <a href="#service">Services</a>
-               <a href="#footer">Contact</a>  
+               <a class=" smooth-menu" href="#about">About</a>
+               <a class=" smooth-menu" href="#service">Services</a>
+               <a class=" smooth-menu" href="#footer">Contact</a>  
     
                
 
@@ -71,6 +71,27 @@ burger.addEventListener('click', () => {
 });
 
      </script>
+    <!-- <script>
+        let slides = document.querySelectorAll('.slide-container');
+        let index = 0;
+        function next(){
+            slides[index].classList.remove('active');
+            index = (index + 1) % slides.length;
+            slides[index].classList.add('active');
+
+
+        }
+        function prev(){
+            slides[index].classList.remove('active');
+            index = (index - 1 + slides.length) % slides.length;
+            slides[index].classList.add('active');
+        }
+
+
+
+
+
+    </script> -->
 
 
    

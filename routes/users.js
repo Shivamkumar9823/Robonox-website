@@ -27,7 +27,6 @@ module.exports = mongoose.model("user", userSchema);  // here user is collection
 
 
 
-
 // const mongoose = require('mongoose');
 // const plm = require('passport-local-mongoose');
 

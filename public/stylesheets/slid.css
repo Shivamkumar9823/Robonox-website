@@ -1,110 +1,196 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,700;1,300&display=swap');
+/*** 
 
-.slide-container{
-    font-family: 'Nunito',sans-serif;
-    margin: 0;padding: 0;
-    text-transform: capitalize;
-    min-height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom:50px ;
-    /* padding-right: 50px; */
+====================================================================
+		Testimonial Section
+====================================================================
 
-}
-.slide{
+***/
+
+.large-container {
+    position: static;
+    max-width: 1580px;
+    padding: 0px 30px;
+    margin: 0 auto;
+  }
+  
+  .testimonial-section {
     position: relative;
-    perspective: 1000px;
-
-}
-.slide{
-    border-radius: 5px;
-    background-color:#3498db;
-    box-shadow: 0 5px 10px #3337;
-    width: 450px;
-    padding: 20px;
-    margin: 10px;
-    position: relative;
-    transform-style:  preserve-3d;
-    animation: slide .4s linear;
-
-
-}
-@keyframes slide{
-    0%{
-        transform:rotateX('180deg') ;
+    padding-top: 80px;
+    padding-bottom: 210px;
+    overflow: hidden;
+    &:before {
+      position: absolute;
+      left: -200px;
+      top: 22%;
+      background-image: url(http://t.commonsupport.com/adro/images/icons/ring-circle.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 701px;
+      height: 756px;
+      content: "";
+      -webkit-animation: fa-spin 25s infinite alternate;
+      -moz-animation: fa-spin 25s infinite alternate;
+      -ms-animation: fa-spin 25s infinite alternate;
+      -o-animation: fa-spin 25s infinite alternate;
+      animation: fa-spin 25s infinite alternate;
     }
-    
-}
-
-
-.slide .icon{
+    .sec-title {
+      position: relative;
+      margin-bottom: 115px;
+      .title {
+        margin-bottom: 20px;
+      }
+    }
+    .testimonial-carousel {
+      position: relative;
+      max-width: 1100px;
+      margin: 0 -50px;
+    }
+  }
+  
+  .testimonial-block {
+    position: relative;
+    padding: 50px;
+    .inner-box {
+      padding: 80px 105px;
+      background-color: #ffffff;
+      box-shadow: 0 0 50px rgba(226, 222, 232, 0.75);
+    }
+    .text {
+      position: relative;
+      display: block;
+      font-size: 18px;
+      line-height: 32px;
+      color: #282331;
+      font-weight: 400;
+      margin-bottom: 50px;
+      font-family: "Muli", sans-serif;
+    }
+    .info-box {
+      position: relative;
+      padding-left: 115px;
+      padding-top: 10px;
+      .thumb {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 82px;
+        width: 82px;
+        img {
+          border: 6px solid #e5e6fa;
+          border-radius: 50%;
+          overflow: hidden;
+          display: block;
+          width: 100%;
+          box-shadow: 0 45px 45px rgba(147, 147, 147, 0.35);
+        }
+      }
+      .name {
+        position: relative;
+        display: block;
+        font-size: 21px;
+        line-height: 1.2em;
+        color: #382c4d;
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-family: "Niramit", sans-serif;
+      }
+      .designation {
+        position: relative;
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+        color: #8053f7;
+        font-weight: 400;
+        font-family: "Muli", sans-serif;
+      }
+    }
+  }
+  
+  .testimonial-carousel {
+    .owl-nav {
+      position: absolute;
+      right: 75px;
+      bottom: 70px;
+    }
+    .owl-next, .owl-prev {
+      position: relative;
+      display: inline-block;
+      height: 75px;
+      width: 75px;
+      line-height: 75px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: #ffffff;
+      -webkit-transition: all 300ms ease;
+      -moz-transition: all 300ms ease;
+      -ms-transition: all 300ms ease;
+      -o-transition: all 300ms ease;
+      transition: all 300ms ease;
+    }
+    .owl-next:hover, .owl-prev:hover {
+      background-color: #00df97;
+      box-shadow: 0 24px 24px rgba(187, 187, 187, 0.75);
+    }
+  }
+  
+  .arrow-right, .arrow-left {
+    position: relative;
+    display: inline-block;
+    height: 9px;
+    width: 43px;
+    background-image: url(http://t.commonsupport.com/adro/images/icons/arrow-left-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .arrow-right {
+    background-image: url(http://t.commonsupport.com/adro/images/icons/arrow-right-2.png);
+  }
+  
+  .testimonial-section .thumb-layer {
     position: absolute;
-    top:10px; right: 15px;
-    font-size: 90px;
-    
-}
-.slide img{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 10px;
-}
-.slide user{
-    display: flex;
-    align-items: center;
-}
-
-.slide .user .user-info h3{
-    color: #333;
-    font-size: 20px;
-}
-
-.slide .user .user-info .stars i{
-    color: #cadb34;
-    font-size: 15px;
-}
-.slide .text{
-    color: #333;
-    font-size: 14px;
-    padding-top: 15px;
-    font-style: italic;
-
-
-}
-.cont .slide-container{
-    display: none;
-}
-.cont .slide-container.active{
-    display: block;
-}
-.cont #next,
-.cont #prev{
-    position: absolute;
-    top: 61.2%;
-    transform: translateY(-50%);
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
-    text-align: center;
-    font-size: 20px;
-    background: #fff;
-    color: #333;
-    cursor:pointer;
-    border-radius: 50% ;
-    box-shadow:0 5px 10px #3337;
-}
-.cont #next{
-    right: 140px;
-
-}
-.cont #prev{
-    left: 760px;
-
-}
-.cont #next:hover,
-.cont #prev:hover{
-    background: #333;
-    color: #fff;
-}
+    right: 30px;
+    top: 120px;
+    .image {
+      position: relative;
+      margin-right: 0;
+      img {
+        display: inline-block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .testimonial-section .sec-title {
+      margin-bottom: 50px;
+    }
+    .testimonial-block {
+      padding: 0;
+      .inner-box {
+        box-shadow: none;
+        border: 2px solid #f1f1f1;
+      }
+    }
+    .testimonial-carousel {
+      .owl-nav {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        margin-top: 20px;
+        text-align: center;
+      }
+      .owl-next, .owl-prev {
+        border: 2px solid #f1f1f1;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 1366px) {
+    .large-container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
